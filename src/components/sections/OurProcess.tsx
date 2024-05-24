@@ -8,7 +8,7 @@ const OurProcess: React.FC = () => {
     return(
         <>
         
-        <section className="pt-10 pb-10 md:pt-20 md:pb-20 lg:pt-40 lg:pb-40 bg-bg_gray">
+        <section className="pt-14 pb-14 md:pt-20 md:pb-20 lg:pt-40 lg:pb-40 bg-bg_gray">
               <div className="container mx-auto px-5 xl:px-0">
                 <div className="">
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 lg:gap-8 pr-20">
@@ -71,7 +71,7 @@ const OurProcess: React.FC = () => {
                             <LinkWithArrow href={"#"} label={"Read More"} />
                         </div>
                     
-                    <div className="flex flex-col justify-center items-center">
+                    <div className="flex flex-col pt-5 justify-center items-center">
                         <CustomButton btnName={"Contact Us to Get Started"} withArrow={true} classNames={"py-3 px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 xl:py-4 xl:px-7 text-base md:text-lg lg:text-xl border-2 border-grayone hover:bg-grayone hover:text-white"} />
                     </div>
                 </div>

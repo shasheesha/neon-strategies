@@ -22,6 +22,9 @@
   font-optical-sizing: auto;
 }
 
+.h-webkit-fill-available{
+  height: -webkit-fill-available;
+}
 
 @layer utilities {
   .transition-max-height {

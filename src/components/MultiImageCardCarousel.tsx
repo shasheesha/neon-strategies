@@ -33,10 +33,10 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
       </div>
 
       <div className={`${styles.imageContainer} flex justify-center`}>
-        <div
-          className={styles.imageSlider}
-          style={{ transform: `translateX(-${currentIndex * 75}%)` }}
-        >
+      <div className="over-layer absolute h-webkit-fill-available w-32 z-40 right-0 bg-gradient-to-l from-white to-transparent"></div>
+
+        <div className={styles.imageSlider} style={{ transform: `translateX(-${currentIndex * 75}%)` }} >
+
           {images.map((src, index) => (
             <div className={styles.imageCard} key={index}>
               <img className='w-full rounded' src={src} alt={`Image ${index}`} />
