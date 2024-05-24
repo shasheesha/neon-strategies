@@ -1,0 +1,17 @@
+  
+  .imageContainer {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .imageSlider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .imageCard {
+    min-width: 60%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
