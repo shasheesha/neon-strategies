@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         <script async src="node_modules/@material-tailwind/html/scripts/ripple.js"></script>
         <script type="module" src="node_modules/@material-tailwind/html@latest/scripts/popover.js"></script>
       </body>

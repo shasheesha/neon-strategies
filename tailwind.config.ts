@@ -14,6 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    aspectRatio: {
+      '3/4': '3 / 4',
+    },
     colors: {
       transparent: 'transparent',
       'white' :{
@@ -27,7 +30,7 @@ const config: Config = {
         700: '#FFFFFF70',
         800: '#FFFFFF80',
         900: '#FFFFFF90',
-        default: '#FFFFFF',
+        DEFAULT: '#FFFFFF',
       },
       'black' :{
         50: '#00000005',
@@ -40,7 +43,7 @@ const config: Config = {
         700: '#00000070',
         800: '#00000080',
         900: '#00000090',
-        default: '#000000',
+        DEFAULT: '#000000',
       },
       'grayone' :{
         50: '#44444405',
@@ -53,7 +56,7 @@ const config: Config = {
         700: '#44444470',
         800: '#44444480',
         900: '#44444490',
-        default: '#444444',
+        DEFAULT: '#444444',
       },
       'graytwo' :{
         50: '#3F3F3F05',
@@ -66,7 +69,7 @@ const config: Config = {
         700: '#3F3F3F70',
         800: '#3F3F3F80',
         900: '#3F3F3F90',
-        default: '#3F3F3F',
+        DEFAULT: '#3F3F3F',
       },
       'ash' :{
         50: '#BEBEBE05',
@@ -79,7 +82,7 @@ const config: Config = {
         700: '#BEBEBE70',
         800: '#BEBEBE80',
         900: '#BEBEBE90',
-        default: '#BEBEBE',
+        DEFAULT: '#BEBEBE',
       },
       'lightash' :{
         50: '#F2EFE705',
@@ -92,7 +95,7 @@ const config: Config = {
         700: '#F2EFE770',
         800: '#F2EFE780',
         900: '#F2EFE790',
-        default: '#F2EFE7',
+        DEFAULT: '#F2EFE7',
       },
       'blue' :{
         50: '#00189705',
@@ -105,7 +108,7 @@ const config: Config = {
         700: '#00189770',
         800: '#00189780',
         900: '#00189790',
-        default: '#001897',
+        DEFAULT: '#001897',
       },
       'darkblue' :{
         50: '#000F5C05',
@@ -118,8 +121,10 @@ const config: Config = {
         700: '#000F5C70',
         800: '#000F5C80',
         900: '#000F5C90',
-        default: '#000F5C',
+        DEFAULT: '#000F5C',
       },
+      'bg_gray' : '#F5F5F5',
+      'tagbg_gray' : '#F1F1F1',
 
     }
   },
