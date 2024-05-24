@@ -28,7 +28,7 @@ const FAQ: React.FC = () => {
 
     return(
         <>    
-            <section className="pt-20 pb-10 lg:pt-40 lg:pb-20">
+            <section className="pt-20 pb-10 lg:pt-40 lg:pb-20" id="faq">
               <div className="container mx-auto">
                 <div className="px-10 mb-10 lg:px-20 lg:mb-20">
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-1">

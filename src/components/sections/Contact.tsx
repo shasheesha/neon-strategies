@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
     return(
         <>
         
-        <section className="pt-14 pb-10 lg:pt-40 lg:pb-20">
+        <section className="pt-14 pb-10 lg:pt-40 lg:pb-20" id="contact">
               <div className="container mx-auto">
                 <div className="px-5 md:px-10 lx:px-20 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <div className="flex flex-col justify-start">

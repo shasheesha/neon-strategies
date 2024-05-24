@@ -24,7 +24,7 @@ const WhatWeDo: React.FC = () => {
 
     return(
         <>
-        <section className="pt-20 pb-10 lg:pt-40 lg:pb-20">
+        <section className="pt-20 pb-10 lg:pt-40 lg:pb-20" id="services">
             <div className="container mx-auto">
                 <div className="px-10 lg:px-20">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 mb-10 sm:mb-28">

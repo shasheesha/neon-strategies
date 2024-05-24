@@ -8,7 +8,7 @@ const OurProcess: React.FC = () => {
     return(
         <>
         
-        <section className="pt-14 pb-14 md:pt-20 md:pb-20 lg:pt-40 lg:pb-40 bg-bg_gray">
+        <section className="pt-14 pb-14 md:pt-20 md:pb-20 lg:pt-40 lg:pb-40 bg-bg_gray" id="process">
               <div className="container mx-auto px-5 xl:px-0">
                 <div className="">
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 lg:gap-8 pr-20">
