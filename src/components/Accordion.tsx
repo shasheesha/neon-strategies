@@ -24,12 +24,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
   }, [isOpen]);
 
   return (
-    <div className="border-b border-gray-200 pl-20 py-14">
-      <button
-        className="w-full flex justify-between items-center text-left focus:outline-none"
-        onClick={toggleOpen}
-      >
-        <span className="font-bold text-xl">{title}</span>
+    <div className="border-b border-gray-200 pl-8 pr-8 md:pl-10 md:pr-10 lg:pl-20 py-6 md:py-10 lg:py-14">
+      <button className="w-full flex justify-between items-center text-left focus:outline-none" onClick={toggleOpen}>
+        <span className="font-bold text-base md:text-lg lg:text-xl">{title}</span>
         <span>  
             <div className={`${isOpen ? "rotate-180" : ""} duration-500 ease-in-out`}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24.023" height="13.426" viewBox="0 0 24.023 13.426">
@@ -41,9 +38,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
       <div
         ref={contentRef}
         style={{ maxHeight: height }}
-        className="overflow-hidden transition-max-height duration-500 ease-in-out pr-52"
+        className="overflow-hidden transition-max-height duration-500 ease-in-out pr-0 sm:pr-20 md:pr-32 lg:pr-52"
       >
-        <div className="text-grayone font-medium text-xl leading-loose pt-14">{content}</div>
+        <div className="text-grayone font-medium text-base md:text-lg lg:text-xl leading-normal md:leading-relaxed lg:leading-loose pt-6 md:pt-10 lg:pt-14">{content}</div>
       </div>
     </div>
   );
