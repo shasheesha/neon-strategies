@@ -10,9 +10,10 @@ interface AnimatedSectionProps {
 const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.25,
+    threshold: 0.2,
   });
-
+  console.log("ani-com-test-log");
+  
   return (
     <motion.section
       ref={ref}

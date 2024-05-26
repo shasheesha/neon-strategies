@@ -1,6 +1,7 @@
 "use client"
 import LinkWithArrow from "../LinkWithArrow";
 import CustomButton from "../CustomButton";
+import AnimationFadeUp from "../AnimationFadeUp";
 
 const OurProcess: React.FC = () => {
 
@@ -15,7 +16,7 @@ const OurProcess: React.FC = () => {
         <>
         
         <section className="pt-14 pb-14 md:pt-20 md:pb-20 lg:pt-40 lg:pb-40 bg-bg_gray" id="process">
-              <div className="container mx-auto px-5 xl:px-0">
+              <div className="container mx-auto px-5">
                 <div className="">
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 lg:gap-8 pr-20">
                     <div>
@@ -33,6 +34,7 @@ const OurProcess: React.FC = () => {
                         <p className="text-sm lg:text-base font-medium leading-relaxed lg:leading-loose">At Neon Strategies, we believe that a well-defined process is key to delivering exceptional results. Our approach is collaborative, transparent, and tailored to meet the unique needs of each client. Here’s a step-by-step overview of how we work:</p>
                     </div>
 
+                    <AnimationFadeUp>
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
@@ -43,7 +45,8 @@ const OurProcess: React.FC = () => {
                             </div>
                             <LinkWithArrow label={"Read More"} />
                         </div>
-
+                    </AnimationFadeUp>
+                    <AnimationFadeUp>
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
@@ -55,6 +58,8 @@ const OurProcess: React.FC = () => {
                             <LinkWithArrow label={"Read More"} />
                         </div>
 
+                    </AnimationFadeUp>
+                    <AnimationFadeUp>
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
@@ -66,6 +71,8 @@ const OurProcess: React.FC = () => {
                             <LinkWithArrow label={"Read More"} />
                         </div>
                     
+                    </AnimationFadeUp>
+                    <AnimationFadeUp>
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
@@ -77,9 +84,12 @@ const OurProcess: React.FC = () => {
                             <LinkWithArrow label={"Read More"} />
                         </div>
                     
-                    <div className="flex flex-col pt-5 justify-center items-center">
-                        <CustomButton btnName={"Contact Us to Get Started"} withArrow={true} onClick={() => handleScrollToSection('contact')} arrowClassNames="stroke-grayone group-hover:stroke-white" hoverAnimationClasses="bg-grayone" classNames={"py-3 px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 xl:py-4 xl:px-7 text-base md:text-lg lg:text-xl border-2 border-grayone hover:text-white"} />
-                    </div>
+                    </AnimationFadeUp>
+                    <AnimationFadeUp>
+                        <div className="flex flex-col pt-5 justify-center items-center">
+                            <CustomButton btnName={"Contact Us to Get Started"} withArrow={true} onClick={() => handleScrollToSection('contact')} arrowClassNames="stroke-grayone group-hover:stroke-white" hoverAnimationClasses="bg-grayone" classNames={"py-3 px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 xl:py-4 xl:px-7 text-base md:text-lg lg:text-xl border-2 border-grayone hover:text-white"} />
+                        </div>
+                    </AnimationFadeUp>
                 </div>
 
 
