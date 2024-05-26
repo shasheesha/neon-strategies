@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '@/styles/ImageCarousel.module.css';
 
 interface ImageCarouselProps {
@@ -17,6 +17,14 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 4000); 
+
+    return () => clearInterval(interval);
+  }, [currentIndex]); 
+
   return (
     <div className="flex flex-col items-end relative">
       <div className="flex flex-row gap-4 justify-end mb-8">
@@ -33,9 +41,10 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
       </div>
 
       <div className={`${styles.imageContainer} flex justify-center`}>
-      <div className="over-layer absolute h-webkit-fill-available w-32 z-40 right-0 bg-gradient-to-l from-white to-transparent"></div>
+      <div className="over-layer absolute h-webkit-fill-available w-32 z-30 right-0 bg-gradient-to-l from-white to-transparent"></div>
+      <div className="over-layer absolute h-webkit-fill-available w-8 z-30 left-0 bg-gradient-to-l from-transparent to-white "></div>
 
-        <div className={styles.imageSlider} style={{ transform: `translateX(-${currentIndex * 75}%)` }} >
+        <div className={styles.imageSlider} style={{ transform: `translateX(-${currentIndex * 50}%)` }} >
 
           {images.map((src, index) => (
             <div className={styles.imageCard} key={index}>

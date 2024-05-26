@@ -1,3 +1,4 @@
+import AnimationFadeUp from "@/components/AnimationFadeUp";
 import CustomButton from "@/components/CustomButton";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
@@ -6,6 +7,7 @@ import GetInTouchBanner from "@/components/sections/GetInTouchBanner";
 import Hero from "@/components/sections/Hero";
 import OurProcess from "@/components/sections/OurProcess";
 import ParallaxBanner from "@/components/sections/ParallaxBanner";
+import Test from "@/components/sections/Test";
 import VideoBanner from "@/components/sections/VideoBanner";
 import WhatWeDo from "@/components/sections/WhatWeDo";
 import Image from "next/image";
@@ -13,15 +15,33 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <Hero />
-    <VideoBanner />
-    <WhatWeDo />
-    <About />
-    <ParallaxBanner />
-    <FAQ />
-    <OurProcess />
-    <Contact />
-    <GetInTouchBanner />
+    <AnimationFadeUp>
+      <Hero />    
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <VideoBanner />
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <WhatWeDo />
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <About />
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <ParallaxBanner />
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <FAQ />
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <OurProcess />
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <Contact />
+    </AnimationFadeUp>
+    <AnimationFadeUp>
+      <GetInTouchBanner />
+    </AnimationFadeUp>
     </>
   );
 }
