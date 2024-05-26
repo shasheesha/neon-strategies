@@ -1,3 +1,4 @@
+import { motion, AnimatePresence } from "framer-motion";
 import LinkWithArrow from "../LinkWithArrow";
 import MultiImageCardCarousel from "../MultiImageCardCarousel";
 
@@ -35,7 +36,7 @@ const WhatWeDo: React.FC = () => {
                         <p className="text-2xl font-light leading-tight mb-5 sm:mb-10 md:mb-14 md:text-3xl lg:text-4xl xl:text-5xl lg:leading-normal xl:leading-normal">A comprehensive range of marketing services designed to elevate your brand and drive success.</p>    
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-24 lg:mb-24">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-24 lg:mb-24" id="digital-marketing">
                       <div className="md:pr-16 lg:pr-20 xl:pr-36 flex flex-col justify-between">
                         <div>
                           <div className="mb-6 sm:mb-8">
@@ -51,7 +52,7 @@ const WhatWeDo: React.FC = () => {
                           </div>
                         </div>
                         <div>
-                          <LinkWithArrow href={"#"} label={"Learn More"} />
+                          <LinkWithArrow label={"Learn More"} />
                         </div>
                       </div>
                       <div className="">
@@ -61,7 +62,7 @@ const WhatWeDo: React.FC = () => {
 
                     <div className="line w-full bg-grayone-300 h-px"></div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-24 lg:mb-24">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-24 lg:mb-24" id="branding">
                       <div className="md:pr-16 lg:pr-20 xl:pr-36 flex flex-col justify-between">
                         <div>
                           <div className="mb-6 sm:mb-8">
@@ -77,7 +78,7 @@ const WhatWeDo: React.FC = () => {
                           </div>
                         </div>
                         <div>
-                          <LinkWithArrow href={"#"} label={"Learn More"} />
+                          <LinkWithArrow label={"Learn More"} />
                         </div>
                       </div>
                       <div className="">
@@ -87,7 +88,7 @@ const WhatWeDo: React.FC = () => {
 
                     <div className="line w-full bg-grayone-300 h-px"></div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-24 lg:mb-24">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 mb-10 md:mt-16 md:mb-16 lg:mt-24 lg:mb-24" id="creative-services">
                       <div className="md:pr-16 lg:pr-20 xl:pr-36 flex flex-col justify-between">
                         <div>
                           <div className="mb-6 sm:mb-8">
@@ -102,7 +103,7 @@ const WhatWeDo: React.FC = () => {
                           </div>
                         </div>
                         <div>
-                          <LinkWithArrow href={"#"} label={"Learn More"} />
+                          <LinkWithArrow label={"Learn More"} />
                         </div>
                       </div>
                       <div className="">

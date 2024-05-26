@@ -1,6 +1,14 @@
+"use client";
 import LinkWithArrow from "../LinkWithArrow"
 
 const Hero: React.FC = () => {
+
+  const handleScrollToSection = (id:string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
     return(
         <>
@@ -17,7 +25,7 @@ const Hero: React.FC = () => {
                     <div className="lg:col-span-2">
                       <p className="text-base md:text-lg lg:text-xl mb-8 sm:mb-16 font-medium text-grayone">At Neon Strategies, we illuminate your brand with innovative and dynamic marketing solutions. Our team of experts is committed to transforming your vision into reality with strategies that deliver measurable results and sustainable growth.</p>
                       <div className="">
-                        <LinkWithArrow href={"#"} label={"Start Your Journey with Us!"} />
+                        <LinkWithArrow onClick={() => handleScrollToSection('contact')} label={"Start Your Journey with Us!"} />
                       </div>
                     </div>
                   </div>
