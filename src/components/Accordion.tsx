@@ -28,7 +28,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
       <button className="w-full flex justify-between items-center text-left focus:outline-none" onClick={toggleOpen}>
         <span className="font-bold text-base md:text-lg lg:text-xl">{title}</span>
         <span>  
-            <div className={`${isOpen ? "rotate-180" : ""} duration-500 ease-in-out`}>
+            <div className={`${isOpen ? "" : "rotate-180"} duration-500 ease-in-out`}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24.023" height="13.426" viewBox="0 0 24.023 13.426">
                     <path id="Vector_4" data-name="Vector 4" d="M21.195,0,10.6,10.6,0,0" transform="translate(22.609 12.012) rotate(180)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/>
                 </svg>
