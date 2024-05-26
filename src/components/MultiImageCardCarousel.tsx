@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import styles from '@/styles/ImageCarousel.module.css';
 
 interface ImageCarouselProps {
@@ -48,7 +49,7 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
           {images.map((src, index) => (
             <div className={styles.imageCard} key={index}>
-              <img className='w-full rounded' src={src} alt={`Image ${index}`} />
+              <Image priority width={810} height={540} className='w-full rounded' src={src} alt={`Image ${index}`} />
             </div>
           ))}
         </div>

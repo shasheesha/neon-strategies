@@ -2,6 +2,7 @@
 import LinkWithArrow from "../button/LinkWithArrow";
 import CustomButton from "../button/CustomButton";
 import AnimationFadeUp from "../animation/AnimationFadeUp";
+import Image from "next/image";
 
 const OurProcess: React.FC = () => {
 
@@ -38,7 +39,7 @@ const OurProcess: React.FC = () => {
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
-                                    <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
+                                    <Image priority width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
                                 </div>
                                 <p className="text-lg md:text-xl lg:text-2xl font-medium leading-normal mb-3 lg:mb-6">Research & Analysis</p>
                                 <p className="text-sm lg:text-base font-medium leading-normal text-grayone mb-8 lg:mb-14">Our team conducts thorough market research and competitive analysis to gain insights into your industry and audience. We use this data to inform our strategies and ensure they are aligned with current market trends and customer behaviors.</p>
@@ -50,7 +51,7 @@ const OurProcess: React.FC = () => {
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
-                                    <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
+                                    <Image priority width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
                                 </div>
                                 <p className="text-lg md:text-xl lg:text-2xl font-medium leading-normal mb-3 lg:mb-6">Creative Concepting</p>
                                 <p className="text-sm lg:text-base font-medium leading-normal text-grayone mb-8 lg:mb-14">Our creative team brainstorms and develops innovative concepts that align with your brand and strategy. We focus on creating compelling visuals and messages that resonate with your audience and differentiate your brand from the competition.</p>
@@ -63,7 +64,7 @@ const OurProcess: React.FC = () => {
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
-                                    <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
+                                    <Image priority width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
                                 </div>
                                 <p className="text-lg md:text-xl lg:text-2xl font-medium leading-normal mb-3 lg:mb-6">Implementation</p>
                                 <p className="text-sm lg:text-base font-medium leading-normal text-grayone mb-8 lg:mb-14">With a solid strategy and creative concepts in place, we move to the implementation phase. Our team executes the marketing plan across various channels, ensuring each element is aligned and working towards your goals. This includes launching campaigns, creating content, and optimizing your digital presence.</p>
@@ -76,7 +77,7 @@ const OurProcess: React.FC = () => {
                         <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
-                                    <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
+                                    <Image priority width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
                                 </div>
                                 <p className="text-lg md:text-xl lg:text-2xl font-medium leading-normal mb-3 lg:mb-6">Monitoring & Optimization</p>
                                 <p className="text-sm lg:text-base font-medium leading-normal text-grayone mb-8 lg:mb-14">We continuously monitor the performance of our campaigns and strategies using advanced analytics tools. By tracking KPIs and other metrics, we gain insights into what’s working and what can be improved. We make data-driven adjustments to optimize performance and maximize ROI.</p>

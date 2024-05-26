@@ -49,6 +49,7 @@ interface AccordionProps {
 
 const Accordion: React.FC<AccordionProps> = ({ items }) => {
   return (
+    <>
     <div className="w-full">
       {items.map((item, index) => (
         <AnimationFadeUp>
@@ -57,6 +58,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
 
       ))}
     </div>
+    </>
   );
 };
 
