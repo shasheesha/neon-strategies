@@ -12,7 +12,7 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    
+    console.log("next-test-log");
   };
 
   const prevImage = () => {
