@@ -12,6 +12,7 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    
   };
 
   const prevImage = () => {
@@ -29,11 +30,11 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
   return (
     <div className="flex flex-col items-end relative">
       <div className="flex flex-row gap-4 justify-end mb-8">
-        <button onClick={prevImage} className="rotate-180 border-2 rounded-full border-black px-2 py-3">
+        {/* <button onClick={prevImage} className="rotate-180 border-2 rounded-full border-black px-2 py-3">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 19 13.388">
             <path id="Vector_1" data-name="Vector 1" d="M17.036,6H0M12.214,0,18,6l-5.786,6" transform="translate(0 0.694)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
           </svg>
-        </button>
+        </button> */}
         <button onClick={nextImage} className="border-2 rounded-full border-black px-2 py-3">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 19 13.388">
             <path id="Vector_1" data-name="Vector 1" d="M17.036,6H0M12.214,0,18,6l-5.786,6" transform="translate(0 0.694)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
