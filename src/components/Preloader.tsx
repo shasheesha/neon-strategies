@@ -2,7 +2,6 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger, ScrollToPlugin } from 'gsap/all';
-// import '@/styles/preloader.css';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 

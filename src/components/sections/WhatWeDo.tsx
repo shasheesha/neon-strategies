@@ -1,4 +1,3 @@
-import { motion, AnimatePresence } from "framer-motion";
 import LinkWithArrow from "../LinkWithArrow";
 import MultiImageCardCarousel from "../MultiImageCardCarousel";
 import AnimationFadeUp from "../AnimationFadeUp";

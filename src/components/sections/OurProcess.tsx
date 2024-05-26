@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import LinkWithArrow from "../LinkWithArrow";
 import CustomButton from "../CustomButton";
 
