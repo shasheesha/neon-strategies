@@ -80,15 +80,15 @@ const Preloader: React.FC = () => {
       <div className="fixed inset-0 z-50 bg-gray-100 encus-preloader">
           <div className="relative h-screen opacity-0 encus-preloader-animation text-gray-800">
               <div className="flex justify-center items-center absolute inset-0 encus-animation-1">
-                  <p className="text-2xl font-extralight opacity-0 encus-h3 mr-4">Enrolling</p>
-                  <p className="text-2xl font-medium opacity-0 encus-h3 mr-4">Ideas</p>
-                  <p className="text-2xl font-extralight opacity-0 encus-h3 mr-4">with</p>
-                  <p className="text-2xl font-medium opacity-0 encus-h3">Technology</p>
+                  <p className="text-2xl font-medium opacity-0 encus-h3 mr-4">Design</p>
+                  <p className="text-2xl font-medium opacity-0 encus-h3 mr-4">Develop</p>
+                  <p className="text-2xl font-medium opacity-0 encus-h3 mr-4">Creativity</p>
               </div>
               <div className="flex justify-center items-center absolute inset-0 encus-animation-2 flex-col md:flex-row">
                   <div className="relative px-8 encus-reveal-frame">
                       <p className="absolute inset-0 h-full bg-blue-600 opacity-0 encus-reveal-box z-20"></p>
                       <p className="text-3xl font-medium opacity-0 encus-h3">Neon Strategies</p>
+                      <p className='encus-up'></p>
                   </div>
               </div>
           </div>

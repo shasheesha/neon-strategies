@@ -41,7 +41,7 @@ const NavBar: React.FC = () =>{
         <div className="container mx-auto flex flex-row items-center justify-between py-7 px-5">
           <div className="logo">
             <Link href="#">
-              <Image src={'/logo.svg'} alt="Logo" className="object-contain object-center rounded w-32" width={100} height={100} />
+              <Image priority src={'/logo.svg'} alt="Logo" className="object-contain object-center rounded w-32" width={100} height={100} />
             </Link>
           </div>
           
