@@ -1,7 +1,7 @@
 "use client"
-import LinkWithArrow from "../LinkWithArrow";
-import CustomButton from "../CustomButton";
-import AnimationFadeUp from "../AnimationFadeUp";
+import LinkWithArrow from "../button/LinkWithArrow";
+import CustomButton from "../button/CustomButton";
+import AnimationFadeUp from "../animation/AnimationFadeUp";
 
 const OurProcess: React.FC = () => {
 

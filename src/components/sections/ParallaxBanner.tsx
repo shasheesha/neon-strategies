@@ -1,5 +1,5 @@
 "use client"
-import CustomButton from "../CustomButton";
+import CustomButton from "../button/CustomButton";
 
 const ParallaxBanner: React.FC = () => {
 

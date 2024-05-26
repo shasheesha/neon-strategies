@@ -1,6 +1,6 @@
-import LinkWithArrow from "../LinkWithArrow";
+import LinkWithArrow from "../button/LinkWithArrow";
 import MultiImageCardCarousel from "../MultiImageCardCarousel";
-import AnimationFadeUp from "../AnimationFadeUp";
+import AnimationFadeUp from "../animation/AnimationFadeUp";
 
 const WhatWeDo: React.FC = () => {
 

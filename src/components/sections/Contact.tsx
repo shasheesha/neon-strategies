@@ -1,10 +1,10 @@
 "use client"
 import { useForm } from "react-hook-form";
-import CustomField from "../CustomField";
-import CustomTextArea from "../CustomTextArea";
-import CustomButton from "../CustomButton";
+import CustomField from "../inputs/CustomField";
+import CustomTextArea from "../inputs/CustomTextArea";
+import CustomButton from "../button/CustomButton";
 import Image from "next/image";
-import CustomSelect from "../CustomSelect";
+import CustomSelect from "../inputs/CustomSelect";
 
 type FormValues = {
     name : string

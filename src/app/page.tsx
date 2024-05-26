@@ -1,4 +1,4 @@
-import AnimationFadeUp from "@/components/AnimationFadeUp";
+import AnimationFadeUp from "@/components/animation/AnimationFadeUp";
 import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import FAQ from "@/components/sections/FAQ";
