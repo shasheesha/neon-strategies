@@ -1,5 +1,5 @@
 import Accordion from "../Accordion";
-import LinkWithArrow from "../LinkWithArrow";
+import LinkWithArrow from "../button/LinkWithArrow";
 
 const FAQItems = [
     {

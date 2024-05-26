@@ -1,5 +1,5 @@
 "use client";
-import LinkWithArrow from "../LinkWithArrow"
+import LinkWithArrow from "../button/LinkWithArrow"
 
 const Hero: React.FC = () => {
 

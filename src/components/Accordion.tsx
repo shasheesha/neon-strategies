@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
+import AnimationFadeUp from './animation/AnimationFadeUp';
 
 interface AccordionItemProps {
   title: string;
@@ -54,7 +55,10 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
   return (
     <div className="w-full">
       {items.map((item, index) => (
-        <AccordionItem key={index} title={item.title} content={item.content} />
+        <AnimationFadeUp>
+          <AccordionItem key={index} title={item.title} content={item.content} />
+        </AnimationFadeUp>
+
       ))}
     </div>
   );

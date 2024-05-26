@@ -1,5 +1,5 @@
 import Link from "next/link"
-import CustomButton from "../CustomButton";
+import CustomButton from "../button/CustomButton";
 
 
 const GetInTouchBanner: React.FC = () =>{

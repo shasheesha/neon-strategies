@@ -1,10 +1,10 @@
 "use client"
 import { useForm } from "react-hook-form";
-import CustomField from "../CustomField";
-import CustomTextArea from "../CustomTextArea";
-import CustomButton from "../CustomButton";
+import CustomField from "../inputs/CustomField";
+import CustomTextArea from "../inputs/CustomTextArea";
+import CustomButton from "../button/CustomButton";
 import Image from "next/image";
-import CustomSelect from "../CustomSelect";
+import CustomSelect from "../inputs/CustomSelect";
 
 type FormValues = {
     name : string
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
               <div className="container mx-auto">
                 <div className="px-5 md:px-10 lx:px-20 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <div className="flex flex-col justify-start">
-                        <p className="text-2xl font-light leading-tight mb-5 sm:mb-10 md:mb-14 lg:mb-16 md:text-3xl lg:text-4xl xl:text-5xl lg:leading-normal xl:leading-normal">Nice to Meet You!</p>
+                        <p className="text-2xl font-light leading-tight mb-5 md:text-3xl lg:text-4xl xl:text-5xl lg:leading-normal xl:leading-normal">Nice to Meet You!</p>
                         <form action="contact-form" onSubmit={handleSubmit(send)}>
                             <CustomField inputType={"text"} inputId={"fname"} label="Your Name" register={register} errors={errors} isRequired={"Your name is required"} />
                             <CustomField inputType={"text"} inputId={"lname"} label="Your Phone Number" register={register} errors={errors} isRequired={"Your contact number is required"} />
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div className="hidden lg:flex flex-col justify-center items-center">
                     <Image
-                      src={'/images/branding/b-1.png'}
+                      src={'/images/contact.png'}
                       alt="Picture of the author"
                       className="aspect-[3/4] object-cover object-center rounded w-96"
                       width={540}
