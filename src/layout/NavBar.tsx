@@ -53,7 +53,7 @@ const NavBar: React.FC = () =>{
               <li className="relative">
                 <div onClick={toggleServicesDropdown} className="block cursor-pointer rounded bg-transparent text-base font-medium text-grayone p-0 hover:text-blue-700 transition ease-in-out duration-300 delay-100">Services</div>
                 
-                  <ul className={`absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg overflow-hidden px-5 transition-max-height ease-in-out duration-1000 delay-100 ${isServicesDropdownOpen ? 'max-h-screen' : 'max-h-0 opacity-0'}`}>
+                  <ul className={`absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded shadow-lg overflow-hidden p-2 flex flex-col gap-1 transition-max-height ease-in-out duration-1000 delay-100 ${isServicesDropdownOpen ? 'max-h-screen' : 'max-h-0 opacity-0'}`}>
                     <li>
                       <div onClick={() => handleScrollToSection('digital-marketing')} className="block cursor-pointer p-2 hover:bg-gray-100">Digital Marketing</div>
                     </li>
