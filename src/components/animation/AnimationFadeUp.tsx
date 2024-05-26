@@ -12,7 +12,6 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children }) => {
     triggerOnce: true,
     threshold: 0.2,
   });
-  console.log("ani-com-test-log");
   
   return (
     <motion.section
