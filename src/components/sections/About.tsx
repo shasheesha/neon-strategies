@@ -24,7 +24,7 @@ const About: React.FC = () => {
                         <p className="text-base md:text-lg lg:text-xl font-medium text-grayone mb-4 sm:mb-8">To light up your brand with cutting-edge marketing strategies that drive growth and enhance brand visibility.</p>
                         <p className="text-base md:text-lg lg:text-xl font-medium text-grayone mb-8 sm:mb-16">Neon Strategies is a full-service marketing agency dedicated to energizing your brand through creative and effective marketing solutions. Founded in 2017, we have been at the forefront of marketing innovation, helping businesses of all sizes achieve their goals.</p>
                         <div className="">
-                          <CustomButton btnName={"Contact Us Today"} withArrow={true} onClick={() => handleScrollToSection('contact')} arrowClassNames="stroke-white group-hover:stroke-blue" classNames={"py-2 px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 xl:py-4 xl:px-7 text-base md:text-lg lg:text-xl text-white bg-blue border-2 border-blue hover:bg-white hover:text-blue"} />
+                          <CustomButton btnName={"Contact Us Today"} withArrow={true} onClick={() => handleScrollToSection('contact')} arrowClassNames="stroke-white group-hover:stroke-blue" hoverAnimationClasses="bg-white" classNames={"py-2 px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 xl:py-4 xl:px-7 text-base md:text-lg lg:text-xl text-white bg-blue border-2 border-blue hover:text-blue"} />
                         </div>
                       </div>
                     </div>

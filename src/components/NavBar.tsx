@@ -78,7 +78,7 @@ const NavBar: React.FC = () =>{
           </div>
           
           <div className="flex flex-row gap-10 justify-center items-center">
-            <CustomButton btnName={"Let's Talk"} classNames={"py-2 px-4 bg-blue border-2 border-blue text-white text-sm hidden lg:block"} />
+            <CustomButton btnName={"Let's Talk"} hoverAnimationClasses="bg-white" classNames={"py-2 px-4 bg-blue border-2 border-blue text-white text-sm hidden hover:text-blue lg:block"} />
             
             <div className="relative flex flex-col gap-2 lg:hidden cursor-pointer opacity-50 hover:opacity-100 transition easy-in-out duration-300" onClick={toggleMegamenu}>
               <div className="bg-grayone-800 rounded-full" style={{ width: 50, height: 5 }}></div>
@@ -88,7 +88,7 @@ const NavBar: React.FC = () =>{
           </div>
         </div>
 
-        <div className={`absolute top-16 left-0 w-full bg-white shadow-lg z-40 overflow-hidden pt-4 px-5 transition-max-height ease-in-out duration-1000 delay-100 ${isMegamenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
+        <div className={`absolute top-16 left-0 w-full bg-white shadow-lg z-40 overflow-hidden pt-0 px-5 transition-max-height ease-in-out duration-1000 delay-100 ${isMegamenuOpen ? 'pt-4 max-h-screen' : 'max-h-0'}`}>
           <div className="container mx-auto py-6">
             <ul className="flex flex-col space-y-4">
               <li>
@@ -118,7 +118,7 @@ const NavBar: React.FC = () =>{
                 <div onClick={() => handleScrollToSection('contact')} className="block cursor-pointer rounded bg-transparent text-base font-medium text-grayone p-0 hover:text-blue-700 transition ease-in-out duration-300 delay-100">Contact</div>
               </li>
               <li className="flex flex-row justify-center py-5">
-              <CustomButton btnName={"Let's Talk"} withArrow={true} arrowClassNames="stroke-blue" classNames={"py-2 px-4 bg-white border-2 border-blue text-blue text-base w-96"} />
+              <CustomButton btnName={"Let's Talk"} withArrow={true} arrowClassNames="stroke-blue group-hover:stroke-white" hoverAnimationClasses="bg-blue" classNames={"py-2 px-4 bg-white border-2 border-blue text-blue hover:text-white text-base w-96"} />
               </li>
             </ul>
           </div>

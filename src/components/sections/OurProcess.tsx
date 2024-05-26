@@ -34,7 +34,7 @@ const OurProcess: React.FC = () => {
                         <p className="text-sm lg:text-base font-medium leading-relaxed lg:leading-loose">At Neon Strategies, we believe that a well-defined process is key to delivering exceptional results. Our approach is collaborative, transparent, and tailored to meet the unique needs of each client. Here’s a step-by-step overview of how we work:</p>
                     </div>
 
-                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 transition ease-in-out duration-300">
+                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
                                     <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
@@ -45,7 +45,7 @@ const OurProcess: React.FC = () => {
                             <LinkWithArrow label={"Read More"} />
                         </div>
 
-                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 transition ease-in-out duration-300">
+                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
                                     <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
@@ -56,7 +56,7 @@ const OurProcess: React.FC = () => {
                             <LinkWithArrow label={"Read More"} />
                         </div>
 
-                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 transition ease-in-out duration-300">
+                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
                                     <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
@@ -67,7 +67,7 @@ const OurProcess: React.FC = () => {
                             <LinkWithArrow label={"Read More"} />
                         </div>
                     
-                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 transition ease-in-out duration-300">
+                        <div className="p-6 lg:p-8 xl:p-12 rounded bg-white block flex flex-col justify-between cursor-pointer hover:bg-white-800 hover:scale-105 hover:shadow-lg hover:z-10 transition ease-in-out duration-300">
                             <div className="card-content flex flex-col justify-between">
                                 <div className="icon mb-4 lg:mb-8 xl:mb-16">
                                     <img width={72} height={72} src={"/icons/op-1.png"} className="w-14 md:w-16 lg:w-20" alt={"Research & Analysis"} />
@@ -79,7 +79,7 @@ const OurProcess: React.FC = () => {
                         </div>
                     
                     <div className="flex flex-col pt-5 justify-center items-center">
-                        <CustomButton btnName={"Contact Us to Get Started"} withArrow={true} onClick={() => handleScrollToSection('contact')} arrowClassNames="stroke-grayone group-hover:stroke-white" classNames={"py-3 px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 xl:py-4 xl:px-7 text-base md:text-lg lg:text-xl border-2 border-grayone hover:bg-grayone hover:text-white"} />
+                        <CustomButton btnName={"Contact Us to Get Started"} withArrow={true} onClick={() => handleScrollToSection('contact')} arrowClassNames="stroke-grayone group-hover:stroke-white" hoverAnimationClasses="bg-grayone" classNames={"py-3 px-4 md:py-3 md:px-5 lg:py-4 lg:px-6 xl:py-4 xl:px-7 text-base md:text-lg lg:text-xl border-2 border-grayone hover:text-white"} />
                     </div>
                 </div>
 
