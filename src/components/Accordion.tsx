@@ -52,10 +52,11 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
     <>
     <div className="w-full">
       {items.map((item, index) => (
+        <>
         <AnimationFadeUp>
           <AccordionItem key={index} title={item.title} content={item.content} />
         </AnimationFadeUp>
-
+        </>
       ))}
     </div>
     </>
