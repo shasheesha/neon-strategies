@@ -4,7 +4,6 @@ import CustomField from "../CustomField";
 import CustomTextArea from "../CustomTextArea";
 import CustomButton from "../CustomButton";
 import Image from "next/image";
-import SideImage from "@/images/branding/b-1.png";
 import CustomSelect from "../CustomSelect";
 
 type FormValues = {

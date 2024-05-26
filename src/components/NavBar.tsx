@@ -25,10 +25,10 @@ const NavBar: React.FC = () =>{
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      if(isMegamenuOpen === true){
+      if(isMegamenuOpen){
         setIsMegamenuOpen(!isMegamenuOpen);
       }
-      if(isServicesDropdownOpen === true){
+      if(isServicesDropdownOpen){
         setIsServicesDropdownOpen(!isServicesDropdownOpen);
       }
 
