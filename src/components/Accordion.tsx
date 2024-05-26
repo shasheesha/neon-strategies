@@ -36,11 +36,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
             </div>
         </span>
       </button>
-      <div
-        ref={contentRef}
-        style={{ maxHeight: height }}
-        className="overflow-hidden transition-max-height duration-500 ease-in-out pr-0 sm:pr-20 md:pr-32 lg:pr-52"
-      >
+      <div ref={contentRef} style={{ maxHeight: height }} className="overflow-hidden transition-max-height duration-500 ease-in-out pr-0 sm:pr-20 md:pr-32 lg:pr-52">
         <div className="text-grayone font-medium text-base md:text-lg lg:text-xl leading-normal md:leading-relaxed lg:leading-loose pt-6 md:pt-10 lg:pt-14">{content}</div>
       </div>
     </div>
