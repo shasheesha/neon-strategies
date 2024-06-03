@@ -8,12 +8,15 @@ import OurProcess from "@/components/sections/OurProcess";
 import ParallaxBanner from "@/components/sections/ParallaxBanner";
 import VideoBanner from "@/components/sections/VideoBanner";
 import WhatWeDo from "@/components/sections/WhatWeDo";
+import dynamic from "next/dynamic";
+
+const DynamicHero = dynamic(() => import("@/components/sections/Hero"), {ssr: false})
 
 export default function Home() {
   return (
     <>
     <AnimationFadeUp>
-      <Hero />    
+      <DynamicHero />    
     </AnimationFadeUp>
     <AnimationFadeUp>
       <VideoBanner />

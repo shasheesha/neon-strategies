@@ -50,7 +50,7 @@ const MultiImageCardCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
           {images.map((src, index) => (
             <div className={styles.imageCard} key={index}>
-              <Image priority width={810} height={540} className='w-full rounded' src={src} alt={`Image ${index}`} />
+              <Image priority width={810} height={540} className='w-full rounded' src={src} alt={`Image ${index}`} placeholder="blur" />
             </div>
           ))}
         </div>

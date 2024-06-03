@@ -43,6 +43,7 @@ const Contact: React.FC = () => {
                       className="aspect-[3/4] object-cover object-center rounded w-96"
                       width={540}
                       height={540}
+                      placeholder="blur"
                     />
                     </div>
                 </div>
